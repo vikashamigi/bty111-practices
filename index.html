@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BTY111 MCQ Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>BTY111 MCQ Quiz</h1>
+    <div id="timer">Time Left: 100:00</div>
+
+    <div id="question-box">
+        <h2 id="question">Question text</h2>
+        <ul>
+            <li><input type="radio" name="option" id="opt0"><label for="opt0" id="op0"></label></li>
+            <li><input type="radio" name="option" id="opt1"><label for="opt1" id="op1"></label></li>
+            <li><input type="radio" name="option" id="opt2"><label for="opt2" id="op2"></label></li>
+            <li><input type="radio" name="option" id="opt3"><label for="opt3" id="op3"></label></li>
+        </ul>
+    </div>
+
+    <div class="buttons">
+        <button onclick="prevQ()">Previous</button>
+        <button onclick="nextQ()">Next</button>
+        <button class="submit" onclick="submitQuiz()">Submit</button>
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
